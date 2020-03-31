@@ -1,2 +1,2 @@
 # PyGameLearning
-this guy is so lazy, nothing to show you guys.
+This guy is so lazy that has nothing to show you guys.
