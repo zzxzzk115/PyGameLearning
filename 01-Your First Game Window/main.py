@@ -4,7 +4,7 @@
 @Author: JackZhang
 @Date: 2020-03-31 20:48:47
 @LastEditors: JackZhang
-@LastEditTime: 2020-03-31 21:04:25
+@LastEditTime: 2020-03-31 21:24:19
 '''
 # import module.
 import pygame, sys
@@ -15,6 +15,7 @@ window_size = width, height = 400, 300
 
 # initialize the pygame and create the main window.
 pygame.init()
+pygame.display.set_caption("pygame window")
 screen = pygame.display.set_mode(window_size)
 
 # set frame-per-second and the clock.
