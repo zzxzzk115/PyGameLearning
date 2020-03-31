@@ -1,14 +1,14 @@
 # 01-Your First Game Window
 Running screenshot:
 
+![first window](https://github.com/zzxzzk115/PyGameLearning/raw/master/screenshots/first-window.png)
 
-
-To sum up, the minimum skeleton is like this:
+To sum up, the minimum skeleton is just like this:
 
 1. Import module.
 2. Set up custom variables, such as the screen's resolution.
 3. Initialize the pygame and create the main window.
-4. [optional] Set FPS and the clock.
+4. [optional] Set **FPS** and the clock.
 5. A while loop:
    1. [optional] keep the FPS.
    2. Process event (must process the QUIT or ESC)
