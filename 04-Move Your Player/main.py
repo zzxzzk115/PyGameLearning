@@ -4,12 +4,13 @@
 @Author: JackZhang
 @Date: 2020-03-31 20:48:47
 @LastEditors: JackZhang
-@LastEditTime: 2020-04-01 17:25:42
+@LastEditTime: 2020-04-01 17:56:15
 '''
 # import module.
 import pygame, sys, os
 from pygame import Color
 from game_config import *
+from sprites import *
 
 class Game:
     def __init__(self):
@@ -18,11 +19,14 @@ class Game:
         pygame.mixer.init()
         self.screen = pygame.display.set_mode(WINDOW_SIZE)
         pygame.display.set_caption(TITLE)
+        pygame.mouse.set_visible(False)
         self.clock = pygame.time.Clock()
         self.running = True
 
     def new(self):
         self.all_sprites = pygame.sprite.Group()
+        player = Player()
+        self.all_sprites.add(player)
         self.run()
 
     def run(self):
