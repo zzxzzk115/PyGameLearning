@@ -4,7 +4,7 @@
 @Author: JackZhang
 @Date: 2020-03-31 20:48:47
 @LastEditors: JackZhang
-@LastEditTime: 2020-04-01 13:12:22
+@LastEditTime: 2020-04-01 13:13:50
 '''
 # import module.
 import pygame, sys, os
@@ -55,6 +55,8 @@ while running:
         elif event.type == pygame.KEYDOWN:
             if event.key == pygame.K_ESCAPE:
                 running = False
+            elif event.key == pygame.K_UP:
+                player.rect.y -= 1
 
     # update
     all_sprites.update()

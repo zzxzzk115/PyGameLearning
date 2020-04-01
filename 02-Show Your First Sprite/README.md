@@ -4,10 +4,9 @@
  * @Author: JackZhang
  * @Date: 2020-04-01 11:47:11
  * @LastEditors: JackZhang
- * @LastEditTime: 2020-04-01 13:02:20
+ * @LastEditTime: 2020-04-01 13:04:20
  -->
-# 01-Your First Game Window
-**Screenshot**:
+# 02-Show Your First Sprite
 
 ![first sprite](https://github.com/zzxzzk115/PyGameLearning/raw/master/screenshots/first-sprite.png)
 
