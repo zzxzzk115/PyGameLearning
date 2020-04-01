@@ -4,13 +4,14 @@
 @Author: JackZhang
 @Date: 2020-03-31 20:48:47
 @LastEditors: JackZhang
-@LastEditTime: 2020-04-01 18:37:58
+@LastEditTime: 2020-04-01 23:23:43
 '''
 # import module.
 import pygame, sys, os
 from pygame import Color
 from game_config import *
 from sprites import *
+from bullet_controller import BulletController
 
 class Game:
     def __init__(self):
@@ -22,11 +23,13 @@ class Game:
         pygame.mouse.set_visible(False)
         self.clock = pygame.time.Clock()
         self.running = True
+        self.time = 0
 
     def new(self):
         self.all_sprites = pygame.sprite.Group()
-        player = Player()
-        self.all_sprites.add(player)
+        self.player = Player()
+        self.bullet_controller = BulletController(self)
+        self.all_sprites.add(self.player)
         self.run()
 
     def run(self):
@@ -41,6 +44,12 @@ class Game:
         pass
 
     def update(self):
+        self.time += 1
+        if self.time >= MAX_TIME:
+            self.time = 0
+        print('time:' + str(self.time))
+        print('group_count:' + str(len(self.all_sprites)))
+        self.bullet_controller.update()
         self.all_sprites.update()
 
     def events(self):
@@ -63,6 +72,7 @@ class Game:
         self.screen.blit(background,(0,0))
         self.all_sprites.draw(self.screen)
         pygame.display.flip()
+        # pygame.display.update()
 
     def show_splash_screen(self):
         pass

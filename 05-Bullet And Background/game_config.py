@@ -4,7 +4,7 @@
 @Author: JackZhang
 @Date: 2020-04-01 13:34:48
 @LastEditors: JackZhang
-@LastEditTime: 2020-04-01 18:35:23
+@LastEditTime: 2020-04-01 23:23:36
 '''
 import os
 
@@ -17,3 +17,5 @@ TITLE = "05-Bullet And Background"
 WINDOW_SIZE = WIDTH, HEIGHT = 336, 607
 # set frame-per-second and the clock.
 FPS = 60
+# max timer time
+MAX_TIME = 1000
