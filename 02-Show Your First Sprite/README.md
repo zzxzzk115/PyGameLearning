@@ -1,7 +1,15 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: JackZhang
+ * @Date: 2020-04-01 11:47:11
+ * @LastEditors: JackZhang
+ * @LastEditTime: 2020-04-01 13:02:20
+ -->
 # 01-Your First Game Window
 **Screenshot**:
 
-![first window](https://github.com/zzxzzk115/PyGameLearning/raw/master/screenshots/first-sprite.png)
+![first sprite](https://github.com/zzxzzk115/PyGameLearning/raw/master/screenshots/first-sprite.png)
 
 
 
